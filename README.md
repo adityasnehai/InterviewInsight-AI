@@ -1,5 +1,14 @@
 # InterviewInsight AI
 
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=0A0A0A)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-DB-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-Queue-DC382D?logo=redis&logoColor=white)](https://redis.io/)
+[![Celery](https://img.shields.io/badge/Celery-Worker-37814A?logo=celery&logoColor=white)](https://docs.celeryq.dev/)
+[![Transformers](https://img.shields.io/badge/Transformers-NLP-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/docs/transformers)
+
 InterviewInsight AI is a full-stack interview practice platform that records a mock interview, runs multimodal analysis (video + audio + transcript), and returns actionable coaching with dashboards, segment-level feedback, reflective learning, and report export.
 
 ## Table of Contents
@@ -465,4 +474,3 @@ ss -ltnp | grep -E ':(5173|8000|5432|6379)\b'
 2. Keep API and UI changes consistent (endpoint + route usage).
 3. Run backend/frontend tests before opening PR.
 4. Update `.env.example` and this README whenever new config keys are added.
->>>>>>> 5258173 (Initial commit)
