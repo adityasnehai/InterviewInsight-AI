@@ -1,0 +1,9 @@
+backend/interviewinsight_env/
+backend/app/storage/
+backend/app/storage/session_state.json
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.env
+*.env

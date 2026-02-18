@@ -1,0 +1,100 @@
+.shell {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stateView {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+  background: linear-gradient(145deg, #ffffff 0%, #eff6ff 100%);
+}
+
+.tag {
+  margin: 0;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.headerRow h1 {
+  margin: 0.25rem 0;
+}
+
+.metaText {
+  margin: 0;
+  color: #475569;
+}
+
+.backLink {
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  text-decoration: none;
+  background: #0f766e;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.chartCard,
+.tableCard {
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 0.9rem;
+}
+
+.chartCard h2,
+.tableCard h2 {
+  margin: 0 0 0.7rem;
+}
+
+.chartBody {
+  width: 100%;
+  height: 360px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.tableWrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+.tableWrapper th,
+.tableWrapper td {
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  padding: 0.52rem 0.4rem;
+  font-size: 0.88rem;
+}
+
+.tableWrapper th {
+  color: #334155;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .headerRow {
+    flex-direction: column;
+  }
+}

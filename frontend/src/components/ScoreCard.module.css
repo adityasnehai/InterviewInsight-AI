@@ -1,0 +1,48 @@
+.card {
+  border-radius: 14px;
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  background: linear-gradient(160deg, #ffffff, #ecfeff);
+  padding: 0.9rem 1rem;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.08);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.headerRow p {
+  margin: 0;
+  color: #0f172a;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  background: #0f766e;
+  color: white;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.card h3 {
+  margin: 0.3rem 0;
+  font-size: 2rem;
+  line-height: 1;
+  color: #0f766e;
+}
+
+.card small {
+  color: #475569;
+}

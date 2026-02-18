@@ -1,0 +1,239 @@
+.shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+}
+
+.layout {
+  width: min(640px, 100%);
+}
+
+.card {
+  border-radius: 24px;
+  border: 1px solid rgba(20, 35, 52, 0.14);
+  box-shadow: 0 22px 54px rgba(15, 23, 42, 0.16);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.96), rgba(241, 250, 255, 0.92));
+  padding: 1.45rem;
+  animation: cardReveal 700ms ease both;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.71rem;
+  font-weight: 800;
+  color: #0d6f8f;
+}
+
+.card h1 {
+  margin: 0.3rem 0;
+  font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+  line-height: 1.07;
+  color: #102033;
+  font-family: "Sora", "Space Grotesk", sans-serif;
+}
+
+.subtitle {
+  margin: 0;
+  color: #456179;
+  font-size: 0.94rem;
+}
+
+.taglineBlock {
+  margin-top: 0.9rem;
+  border-radius: 14px;
+  border: 1px solid rgba(147, 197, 235, 0.36);
+  background: linear-gradient(130deg, rgba(225, 243, 255, 0.72), rgba(238, 251, 255, 0.88));
+  padding: 0.7rem 0.78rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.taglineBlock::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 35%, rgba(160, 218, 255, 0.3) 50%, transparent 65%);
+  transform: translateX(-62%);
+  animation: shimmer 4.8s ease-in-out infinite;
+}
+
+.taglineLabel {
+  margin: 0;
+  font-size: 0.66rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1b5c7e;
+  position: relative;
+  z-index: 1;
+}
+
+.taglineTitle {
+  margin: 0.22rem 0 0;
+  font-size: clamp(1rem, 1.8vw, 1.26rem);
+  line-height: 1.2;
+  color: #123451;
+  font-family: "Sora", "Space Grotesk", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.taglinePulse {
+  margin-top: 0.45rem;
+  display: block;
+  width: 110px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(18, 118, 140, 0.85), rgba(44, 152, 181, 0.35));
+  animation: pulseWidth 2s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+
+.modeTabs {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.modeTabs button {
+  border: 1px solid #c7d8e6;
+  border-radius: 999px;
+  background: #f5f9fc;
+  color: #102033;
+  padding: 0.43rem 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.modeTabs button:hover {
+  transform: translateY(-1px);
+  border-color: #7fa7c5;
+}
+
+.modeTabs .active {
+  background: linear-gradient(140deg, #0f766e, #0c4f6a);
+  color: #f8fafc;
+  border-color: #0d6075;
+}
+
+.form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.48rem;
+}
+
+.form label {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #26435c;
+  letter-spacing: 0.02em;
+}
+
+.form input {
+  border-radius: 11px;
+  border: 1px solid #c8d8e6;
+  padding: 0.7rem 0.74rem;
+  font-size: 0.94rem;
+  color: #12263d;
+  background: rgba(250, 253, 255, 0.88);
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #1688aa;
+  box-shadow: 0 0 0 3px rgba(22, 136, 170, 0.16);
+  background: #ffffff;
+}
+
+.form button[type="submit"] {
+  margin-top: 0.62rem;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(130deg, #0f766e, #0c4f6a);
+  color: #f8fafc;
+  padding: 0.66rem 0.96rem;
+  font-weight: 700;
+  font-size: 0.93rem;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 180ms ease;
+  box-shadow: 0 12px 26px rgba(12, 79, 106, 0.32);
+}
+
+.form button[type="submit"]:hover {
+  transform: translateY(-1px);
+}
+
+.form button[disabled] {
+  opacity: 0.74;
+  cursor: wait;
+  transform: none;
+}
+
+.error {
+  margin: 0.3rem 0 0;
+  color: #991b1b;
+  font-size: 0.9rem;
+}
+
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  100% {
+    transform: translateX(-62%);
+  }
+  50% {
+    transform: translateX(62%);
+  }
+}
+
+@keyframes pulseWidth {
+  0%,
+  100% {
+    width: 110px;
+    opacity: 0.8;
+  }
+  50% {
+    width: 154px;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 680px) {
+  .shell {
+    padding: 0.82rem;
+  }
+
+  .card {
+    padding: 1.05rem;
+    border-radius: 18px;
+  }
+
+  .taglinePulse {
+    width: 92px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .taglineBlock::before,
+  .taglinePulse {
+    animation: none;
+  }
+}

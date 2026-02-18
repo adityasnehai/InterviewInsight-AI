@@ -1,0 +1,155 @@
+.shell {
+  min-height: 100vh;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stateView {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+  background: linear-gradient(145deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+.tag {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.76rem;
+  color: #15803d;
+  font-weight: 700;
+}
+
+.headerRow h1 {
+  margin: 0.2rem 0;
+}
+
+.metaText {
+  margin: 0;
+  color: #475569;
+}
+
+.headerActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.backLink,
+.secondaryLink {
+  border-radius: 999px;
+  text-decoration: none;
+  padding: 0.48rem 0.88rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.backLink {
+  background: #0f766e;
+  color: #f8fafc;
+}
+
+.secondaryLink {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.formCard,
+.coachCard,
+.summaryCard,
+.errorCard {
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 0.9rem;
+}
+
+.formCard h2,
+.coachCard h2,
+.summaryCard h2 {
+  margin: 0 0 0.45rem;
+}
+
+.formCard p {
+  margin: 0 0 0.65rem;
+  color: #334155;
+}
+
+.formCard textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  padding: 0.68rem 0.72rem;
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.formActions {
+  margin-top: 0.65rem;
+}
+
+.formActions button {
+  border: 0;
+  border-radius: 999px;
+  background: #15803d;
+  color: #f8fafc;
+  padding: 0.52rem 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.formActions button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.coachCard p {
+  margin-top: 0;
+  color: #334155;
+}
+
+.coachCard h3,
+.summaryCard h3 {
+  margin: 0.7rem 0 0.35rem;
+}
+
+.coachCard ul,
+.summaryCard ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.coachCard li,
+.summaryCard li {
+  margin-bottom: 0.35rem;
+  color: #334155;
+}
+
+.errorCard p {
+  margin: 0;
+  color: #991b1b;
+}
+
+@media (max-width: 760px) {
+  .headerRow {
+    flex-direction: column;
+  }
+
+  .headerActions {
+    width: 100%;
+  }
+}
