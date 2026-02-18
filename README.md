@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# InterviewInsight-AI
-=======
 # InterviewInsight AI
 
 InterviewInsight AI is a full-stack interview practice platform that records a mock interview, runs multimodal analysis (video + audio + transcript), and returns actionable coaching with dashboards, segment-level feedback, reflective learning, and report export.
